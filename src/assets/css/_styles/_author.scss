@@ -2,13 +2,13 @@
   padding-top: 25px;
   padding-bottom: 71px;
 
-  &__info {
+  &__wrap {
     display: flex;
     justify-content: space-between;
     padding: 0 148px;
   }
 
-  &__wrap {
+  &__info {
     display: flex;
     flex-direction: column;
   }
@@ -40,7 +40,7 @@
     max-width: 208px;
 
     &:hover {
-      background-color: #e58686;
+      background-color: #ffa3a3;
     }
 
     &-link {

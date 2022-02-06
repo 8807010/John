@@ -1,0 +1,96 @@
+.posts {
+  padding-top: 14px;
+
+  &__wrap {
+    background-color: #edf7fa;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 273%;
+    color: #21243d;
+    margin-bottom: 4px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  &__more {
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &-link {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 143%;
+      color: #00a8cc;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 32px;
+  }
+
+  &__card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 24px;
+    flex: 1 1 50%;
+
+    &-title {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 146%;
+      color: #21243d;
+      margin-bottom: 17px;
+    }
+
+    &-description {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 143%;
+      color: #21243d;
+    }
+  }
+}
+
+.date {
+  margin-bottom: 11px;
+
+  &__time {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 144%;
+    color: #21243d;
+    padding-right: 31px;
+    position: relative;
+
+    &::after {
+      content: "|";
+      position: absolute;
+      width: 2px;
+      height: 21px;
+      right: 0;
+      top: 0;
+      color: #21243d;
+    }
+  }
+
+  &__desc {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 144%;
+    color: #21243d;
+    padding-left: 26px;
+  }
+}
