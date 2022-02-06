@@ -1,0 +1,30 @@
+.header {
+  padding-top: 131px;
+  padding-bottom: 162px;
+  &__menu-list {
+    list-style-type: none;
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      padding-right: 33px;
+    }
+  }
+
+  &__menu-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: right;
+    color: #000000;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: #FF6464;
+    }
+  }
+}

@@ -1,8 +1,8 @@
-{% set title = "Home" %}
-{% set bodyClass = "is-home" %}
+{% set title = "John" %}
+{% set bodyClass = "About John" %}
 
 {% extends "_html/_base/_layouts/_default.html" %}
 
 {% block content %}
-    <h1>Content</h1>
+{% include "_html/_base/_includes/_author.html" %}
 {% endblock %}

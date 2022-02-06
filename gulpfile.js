@@ -67,7 +67,7 @@ path.watch.style[0]  = path.src.style[0].replace( path.src.style[0].split('/').p
 path.src.script[0] = path.src.srcPath + path.src.script[0];
 
 path.dist.script = path.dist.distPath + path.dist.script;
- 
+
 path.watch.script = [];
 path.watch.script[0] = path.src.script[0].replace( path.src.script[0].split('/').pop(), '**/*.js' );
 
@@ -243,7 +243,7 @@ function ttf2woff2Converter(){
 /**
  * Woff converter
  */
- function ttf2woffConverter(){
+function ttf2woffConverter(){
 	return gulp.src(path.src.font[0].slice(0, -6) + "src/*.ttf")
 		.pipe(ttf2woff())
 		.pipe(gulp.dest(path.src.font[0].slice(0, -6)));
@@ -274,7 +274,7 @@ function font() {
 /**
  * Clean
  */
- function clean(){
+function clean(){
 	return del([path.dist.distPath]);
 }
 
