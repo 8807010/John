@@ -1,0 +1,64 @@
+.future {
+  padding-top: 30px;
+  padding-bottom: 83px;
+
+  &__title {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 273%;
+    color: #21243d;
+    margin-bottom: -16px;
+  }
+}
+
+.card {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 32px;
+  padding-top: 31px;
+
+  &__img {
+    margin-right: 18px;
+
+    &-main {
+      border-radius: 6px;
+      width: 246px;
+      height: 180px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+      &-title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 146%;
+        color: #21243D;
+        margin-bottom: 16px;
+      }
+  }
+
+  &__year {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 333%;
+    color: #FFFFFF;
+    background-color: #142850;
+    border-radius: 16px;
+    padding: 0 10px;
+    margin-right: 26px;
+  }
+
+  &__specification {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145%;
+    color: #8695A4;
+  }
+
+  &__description {
+    font-weight: normal;
+    line-height: 143%;
+    color: #21243D;
+  }
+}
