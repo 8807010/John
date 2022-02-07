@@ -29,20 +29,20 @@
   }
 
   &__info {
-      &-title {
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 146%;
-        color: #21243D;
-        margin-bottom: 16px;
-      }
+    &-title {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 146%;
+      color: #21243d;
+      margin-bottom: 8px;
+    }
   }
 
   &__year {
     font-weight: 900;
     font-size: 18px;
     line-height: 333%;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #142850;
     border-radius: 16px;
     padding: 0 10px;
@@ -53,12 +53,13 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 145%;
-    color: #8695A4;
+    color: #8695a4;
+    max-width: 594px;
   }
 
   &__description {
     font-weight: normal;
     line-height: 143%;
-    color: #21243D;
+    color: #21243d;
   }
 }

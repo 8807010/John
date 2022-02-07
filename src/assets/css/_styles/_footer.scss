@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 54px;
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+
+    &-list {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+
+    &-icon {
+      width: 30px;
+    }
+  }
+
+  &__copyright {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 142%;
+    color: #21243d;
+  }
+}
