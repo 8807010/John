@@ -52,9 +52,60 @@
 
   &__photo {
     &-img {
+      display: inline-block;
       border-radius: 50%;
       width: 243px;
       height: 243px;
+    }
+  }
+}
+
+@media (max-width: 1139.98px) {
+  .author {
+    &__wrap {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__info {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .author {
+    padding-bottom: 59px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 125%;
+      margin-bottom: 21px;
+      margin-top: 34px;
+    }
+
+    &__photo {
+      &-img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    &__description {
+      margin-bottom: 27px;
+    }
+
+    &__btn {
+      padding: 12px 20px;
+      max-width: 208px;
+
+      &-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 145%;
+        color: #ffffff;
+      }
     }
   }
 }

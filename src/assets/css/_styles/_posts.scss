@@ -1,6 +1,4 @@
 .posts {
-  padding-top: 14px;
-
   &__wrap {
     background-color: #edf7fa;
   }
@@ -11,6 +9,7 @@
     line-height: 273%;
     color: #21243d;
     margin-bottom: 4px;
+    padding-top: 14px;
   }
 
   &__head {
@@ -92,5 +91,51 @@
     line-height: 144%;
     color: #21243d;
     padding-left: 26px;
+  }
+}
+
+@media (max-width: 879.98px) {
+  .posts {
+    &__cards {
+      flex-direction: column;
+      margin: 0 auto;
+      padding-bottom: 38px;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__more {
+      display: none;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__card {
+      &-title {
+        font-size: 22px;
+        line-height: 136%;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .date {
+    margin-bottom: 19px;
+
+    &__time {
+      font-size: 16px;
+      line-height: 144%;
+      padding-right: 24px;
+    }
+
+    &__desc {
+      font-size: 16px;
+      padding-left: 24px;
+    }
   }
 }

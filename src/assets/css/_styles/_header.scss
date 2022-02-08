@@ -1,6 +1,6 @@
 .header {
   padding: 131px 0;
-  
+
   &__menu-list {
     list-style-type: none;
     padding-right: 60px;
@@ -24,7 +24,38 @@
 
     &:hover {
       text-decoration: underline;
-      color: #FF6464;
+      color: #ff6464;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1139.98px) {
+  .header {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    height: 50px;
+    padding: 0;
+    position: relative;
+
+    &__burger {
+      display: block;
+      width: 30px;
+      height: 18px;
+      position: absolute;
+      right: 18px;
+    top: 20px;
+    }
+
+    &__menu {
+      display: none;
     }
   }
 }
