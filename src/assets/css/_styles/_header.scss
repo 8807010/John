@@ -67,7 +67,7 @@
         height: 10%;
         width: 100%;
         transition: all 0.3s ease;
-        background-color: #ffffff;
+        background-color: #000000;
       }
 
       &::before,
@@ -93,18 +93,14 @@
       display: block;
       position: fixed;
       top: 0;
-      // left: -100%;
+      left: -100%;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.9);
-      padding: 100px 30px 30px 30px;
+      padding: 130px 30px 30px 30px;
       transition: all 0.3s ease;
       overflow: auto;
       z-index: 1;
-
-      &-active {
-        left: 0;
-      }
 
       &-list {
         display: flex;
@@ -128,5 +124,27 @@
         }
       }
     }
+  }
+}
+
+.active {
+  left: 0;
+
+  .header__burger {
+    display: none;
+    //   background-color: #ffffff;
+
+    //   &::before {
+    //     transform: rotate(45deg);
+    //   }
+
+    //   &::after {
+    //     transform: rotate(-45deg);
+    //   }
+
+    //   & span {
+    //     display: none;
+    //   }
+    // }
   }
 }

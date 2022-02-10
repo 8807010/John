@@ -3,9 +3,10 @@ fun = (a) => {
 }
 
 
-
+let menu = document.querySelector('.header__menu');
 let burger = document.querySelector('.header__burger');
+// let close = document.querySelector('.close');
 
 burger.addEventListener('click', () => {
-    console.log('click');
+    menu.classList.toggle('active');
 });
