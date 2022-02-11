@@ -57,7 +57,7 @@
       cursor: pointer;
       z-index: 2;
       top: 20px;
-      right: 18px;
+      right: 32px;
 
       & span,
       &::before,
@@ -99,7 +99,6 @@
       background-color: rgba(0, 0, 0, 0.9);
       padding: 130px 30px 30px 30px;
       transition: all 0.3s ease;
-      overflow: auto;
       z-index: 1;
 
       &-list {
@@ -129,22 +128,27 @@
 
 .active {
   left: 0;
+}
 
-  .header__burger {
+.close {
+  margin-top: 15px;
+
+  & span,
+  &::before,
+  &::after {
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  & span {
     display: none;
-    //   background-color: #ffffff;
-
-    //   &::before {
-    //     transform: rotate(45deg);
-    //   }
-
-    //   &::after {
-    //     transform: rotate(-45deg);
-    //   }
-
-    //   & span {
-    //     display: none;
-    //   }
-    // }
   }
 }
