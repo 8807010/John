@@ -297,3 +297,12 @@ exports.default = gulp.series(
     gulp.parallel(njk, scss, script, image, font),
     gulp.parallel(browsersync, watch)
 );
+
+//deploy
+
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
